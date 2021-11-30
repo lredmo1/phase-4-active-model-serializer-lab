@@ -6,6 +6,16 @@ class TagsController < ApplicationController
     render json: tags
   end
 
+  # def index
+  #   if params[:post_id]
+  #     post = Post.find(params[:post_id])
+  #     tags = post.tags
+  #   else
+  #     tags = Tag.all
+  #   end
+  #   render json: tags
+  # end
+
   def show
     tag = Tag.find(params[:id])
     render json: tag

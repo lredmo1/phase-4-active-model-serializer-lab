@@ -6,6 +6,16 @@ class PostsController < ApplicationController
     render json: posts
   end
 
+  # def index
+  #   if params[:author_id]
+  #     author = Author.find(params[:author_id])
+  #     posts = author.posts
+  #   else
+  #     posts = Post.all
+  #   end
+  #   render json: posts
+  # end
+
   def show
     post = Post.find(params[:id])
     render json: post
